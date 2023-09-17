@@ -9,7 +9,7 @@ parser.add_argument("--type", required=True, choices=["AP", "DS"],
 parser.add_argument("--output_dir", required=True, 
                     type=str, help="Workplace output directory")
 
-parser.add_argument("--package_name", required=False, default="default", 
+parser.add_argument("--package_names", required=False, default="default", 
                     nargs="*", type=str, help="Packages name to be created")
 
 
@@ -19,9 +19,10 @@ parser.add_argument("--package_name", required=False, default="default",
 
 if __name__ == "__main__":
     args = parser.parse_args()
-    print(args.package_name)
+    print(args)
     if args.type == "AP":
-        ApProject()
+        project_structure = ApProject(args)
+        #project_structure.create()
     else:
         print("launch DS")
     
