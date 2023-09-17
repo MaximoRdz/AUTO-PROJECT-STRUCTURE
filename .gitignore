@@ -1,0 +1,5 @@
+# ignore markdown note-taking app folder
+.obsidian
+
+# ignore virtual enviroment 
+.venv
