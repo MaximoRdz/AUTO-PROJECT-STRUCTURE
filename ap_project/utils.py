@@ -8,11 +8,12 @@ def print_tree(message, type):
     :param type: file or folder printing format
     """
     type_mask = type == "file"
-    print("|")
+    
     if type == "file":
-        print(f"---- {message}".rjust(ct.FILE_JUST))
+        print("|----".rjust(ct.FILE_JUST), message)
     elif type == "folder":
-        print("----", message.rjust(ct.FOLDER_JUST))
+        print("|")
+        print("|----".ljust(ct.FOLDER_JUST), message)
     else:
         print(message)
 
