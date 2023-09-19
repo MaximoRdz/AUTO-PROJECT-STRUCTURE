@@ -9,7 +9,7 @@ class ApProject:
     """
     def __init__(self, args):
         self.output_dir = args.output_dir
-        self.packages_list = args.package_names
+        self.packages_list = args.packages
 
         if type(self.packages_list) == list:
             for package in self.packages_list:

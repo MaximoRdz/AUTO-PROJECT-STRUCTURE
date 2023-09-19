@@ -1,1 +1,1 @@
-{"header": {"__author__": "M\u00e1ximo Rodr\u00edguez Herrero", "__email__": "mxrdhr@gmail.com"}, "folders": ["test", "images"], "gitignore": [".obsidian", ".venv"]}
+{"header": {"__author__": "M\u00e1ximo Rodr\u00edguez Herrero", "__email__": "mxrdhr@gmail.com"}, "folders": ["test", "images"], "gitignore": [".obsidian", ".venv"], "package": ["__init__.py", "constants.py", "utils.py", "README.md"]}
