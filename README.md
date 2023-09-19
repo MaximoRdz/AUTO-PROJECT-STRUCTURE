@@ -1,12 +1,13 @@
 # Automatic Project Structure Generator
 
 ## Project Overview
-Every coding project has unique goals, different requirements and specific features that are not shared across field-related projects. However, if I have learned anything about computer science is that organization and structure consistency is key to success, that is why this repo is focused on developing an automatic initial workplace so that the structure and initial steps of every project remain consistent. Due to my specialization, there are two main branches of projects that I work on in a day to day fashion: **APPs**, **API**, ...; or, what I call, **AP** projects and **Data Science** (DS) projects.
+Every coding project has unique goals, different requirements and specific features that are not shared across field-related projects. However, if I have learned anything about computer science is that organization and structure consistency is key to success, that is why this repo is focused on developing an automatic initial workplace so that the structure and initial steps of every project remain consistent. Due to my specialization, there are two main branches of projects that I work on in a day to day fashion: **APPs**, **API**, . . .; or, what I call, **AP** projects and **Data Science** (DS) projects.
 ## Shared Items
 Despite the differences between projects there are always some commonalities.
 - `.gitignore`: Avoid pushing files like `.ipynb_checkpoints/`, `.obsidian`, etc.
 - `./images/`: Images used on the readmes.
-- `./test/`: Include API, APP, models, ... tests.
+- `./test/`: Include API, APP, models, . . . tests.
+- `config.json`: 
 ## AP Projects
 AP projects consist on the `main.py` file located in the project folder and surrounded by packages that feed `main.py` the necessary tools to work properly. Every package has associated both `constants.py` and `utils.py` files which I find necessary to provide support to `package.py`, and, of course a `README.md` that further explains the package functionality.
 ### Example Structure
