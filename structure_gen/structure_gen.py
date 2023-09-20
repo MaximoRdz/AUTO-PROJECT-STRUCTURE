@@ -3,6 +3,7 @@ import os
 import structure_gen.constants as ct
 from structure_gen.utils import print_tree, read_json
 
+
 class StructureGen:
     """ 
     Parent class capable of parsing main.py args and creating the project
@@ -19,23 +20,24 @@ class StructureGen:
         self.folders = folders
 
         self.config_info = read_json(ct.CONFIG_FILE_PATH)
+        self.header = "\n".join(list(self.config_info["header"].values()))
 
-
-    def create_file(self, file_name, header=None):
+    def create_file(self, file_path, header=None):
         """
         Creates an empty file unless otherwise specify
+        :param file_path: Complete path to file including extension C//...//name.ext
         :param header: if True a header is added to the file, default False
         """
-        complete_path = os.path.join(self.output_dir, file_name)
-        if os.path.exists(complete_path):
-            print_tree(f"{complete_path} already exists", "file")
+        # complete_path = os.path.join(self.output_dir, file_name)
+        if os.path.exists(file_path):
+            print_tree(f"{file_path} already exists", "file")
         else:
-            with open(complete_path, "w") as file:
+            with open(file_path, "w") as file:
                 if header is None:
                     pass
                 else:
                     file.writelines(header)
-            print_tree(f"{complete_path} created", "file")
+            print_tree(f"{file_path} created", "file")
 
     def create_folder(self, folder_name):
         """Creates a folder in the specify path"""
@@ -44,6 +46,7 @@ class StructureGen:
             print_tree(f"{complete_path} already exists", "folder")
         else:
             os.mkdir(complete_path)
+            print_tree(f"{complete_path} created", "folder")
 
     def create_package(self, package_name):
         """
@@ -52,21 +55,17 @@ class StructureGen:
         """
         self.create_folder(package_name)
         package_path = os.path.join(self.output_dir, package_name)
-
-        package_files = self.config_info["packages"]
+        package_files = self.config_info["package_files"].copy()
         package_files.extend([f"{package_name}.py"])
 
-        header = self.config_info["header"]
         for file in package_files:
             file_path = os.path.join(package_path, file)
             if ".md" in file:
                 self.create_file(file_path, None)
             else: 
-                self.create_file(file_path, header)
+                self.create_file(file_path, self.header)
 
 
-class DevProject(StructureGen):
-    pass
 
    
         
