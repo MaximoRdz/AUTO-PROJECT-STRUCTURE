@@ -1,5 +1,5 @@
 import json
-import ap_project.constants as ct
+import constants as ct
 
 
 def print_tree(message, type):
@@ -21,14 +21,13 @@ def print_tree(message, type):
     
 def create_config_file(output_dir="./"):
     data = {    
-        "header": {
-            "interpreter": "#!/usr/bin/env python",
-            "__author__": "Maximo Rodríguez Herrero",
-            "__email__": "mxrdhr@gmail.com"
-        },
-        "folders": ["test", "images"],
+        "header":{
+                "__author__": "Máximo Rodríguez Herrero", 
+                "__email__": "mxrdhr@gmail.com"
+            }, 
+        "folders":["test", "images"], 
         "gitignore": [".obsidian", ".venv"], 
-        "package": ["__init__.py", "constants.py", "utils.py", "README.md"]
+        "package_files": ["__init__.py", "constants.py", "utils.py", "README.md"]
     }
 
 

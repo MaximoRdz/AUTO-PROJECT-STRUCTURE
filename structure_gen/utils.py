@@ -1,7 +1,7 @@
 import os
 import json
 
-import structure_gen.constants as ct
+
 
 
 def print_tree(message, message_type):
@@ -20,6 +20,12 @@ def print_tree(message, message_type):
     else:
         print(message)
 
+def read_json(file_path):
+    with open(file_path, "r") as file:
+        config_data = json.load(file)
+    return config_data
+
+
 
 def create_folder(folder_name, folder_path):
     """Creates a folder in the specify path"""
@@ -29,22 +35,6 @@ def create_folder(folder_name, folder_path):
     else:
         os.mkdir(complete_path)
 
-
-def create_file(file_name, extension, file_path, header=None):
-    """
-    Creates an empty file unless otherwise specify
-    :param header: if True a header is added to the file, default False
-    """
-    complete_path = os.path.join(file_path, file_name + extension)
-    if os.path.exists(complete_path):
-        print_tree(f"{complete_path} already exists", "file")
-    else:
-        with open(complete_path, "w") as file:
-            if header is None:
-                pass
-            else:
-                file.writelines(header)
-        print_tree(f"{complete_path} created", "file")
 
 
 

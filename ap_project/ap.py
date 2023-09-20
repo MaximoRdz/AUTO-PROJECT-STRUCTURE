@@ -9,7 +9,7 @@ class ApProject:
     """
     def __init__(self, args):
         self.output_dir = args.output_dir
-        self.packages_list = args.packages
+        self.packages_list = args.package_names
 
         if type(self.packages_list) == list:
             for package in self.packages_list:
@@ -41,3 +41,6 @@ class ApProject:
         self.create_file("constants", ".py", package_name)
         self.create_file("utils", ".py", package_name)
         self.create_file("README", ".md", package_name)
+    
+
+
