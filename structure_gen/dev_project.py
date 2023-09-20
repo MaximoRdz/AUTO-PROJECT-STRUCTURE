@@ -11,7 +11,6 @@ class DevProject(StructureGen):
 
     def __init__(self, project_type, output_dir, packages, folders):
         super().__init__(project_type, output_dir, packages, folders)
-        self.create_workplace()
 
     def create_workplace(self):
         """
@@ -31,7 +30,6 @@ class DevProject(StructureGen):
         └──
         :return:
         """
-        self.create_folder("")
         self.create_file(os.path.join(self.output_dir, "main.py"), self.header)
         self.create_file(os.path.join(self.output_dir, "README.md"), None)
         # self.create_file(".config", self.header)

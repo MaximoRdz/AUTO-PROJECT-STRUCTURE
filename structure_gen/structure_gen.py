@@ -22,6 +22,8 @@ class StructureGen:
         self.config_info = read_json(ct.CONFIG_FILE_PATH)
         self.header = "\n".join(list(self.config_info["header"].values()))
 
+        self.create_folder("")    # Create workplace folder
+
     def create_file(self, file_path, header=None):
         """
         Creates an empty file unless otherwise specify
