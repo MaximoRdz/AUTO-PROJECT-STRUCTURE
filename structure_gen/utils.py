@@ -38,6 +38,6 @@ def create_config_file(output_dir="./"):
         "gitignore": [".obsidian", ".venv", ".ipynb_checkpoints", ".idea", "__pycache__/"],
         "package_files": ["__init__.py", "constants.py", "utils.py", "README.md"]
     }
-    json_object = json.dumps(data)
+    json_object = json.dumps(data, indent=4, sort_keys=True)
     with open(os.path.join(output_dir, "config.json"), "w") as file:
         file.write(json_object)
