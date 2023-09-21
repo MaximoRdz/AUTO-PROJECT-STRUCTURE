@@ -32,7 +32,7 @@ class DevProject(StructureGen):
         """
         self.create_file(os.path.join(self.output_dir, "main.py"), self.header)
         self.create_file(os.path.join(self.output_dir, "README.md"), None)
-        # self.create_file(".config", self.header)
+        self.create_file(os.path.join(self.output_dir, ".gitignore"), self.gitignore)
 
         for package in self.packages:
             self.create_package(package)

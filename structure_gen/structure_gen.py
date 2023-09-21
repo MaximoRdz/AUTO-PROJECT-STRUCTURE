@@ -21,24 +21,25 @@ class StructureGen:
 
         self.config_info = read_json(ct.CONFIG_FILE_PATH)
         self.header = "\n".join(list(self.config_info["header"].values()))
+        self.gitignore = ct.GITIGNORE_LINE_SEP.join(self.config_info["gitignore"])
 
         self.create_folder("")    # Create workplace folder
 
     @staticmethod
-    def create_file(file_path, header=None):
+    def create_file(file_path, file_content=None):
         """
         Creates an empty file unless otherwise specify
         :param file_path: Complete path to file including extension C//...//name.ext
-        :param header: if True a header is added to the file, default False
+        :param file_content: Write in file if not None
         """
         if os.path.exists(file_path):
             print_tree(f"{file_path} already exists", "file")
         else:
             with open(file_path, "w") as file:
-                if header is None:
+                if file_content is None:
                     pass
                 else:
-                    file.writelines(header)
+                    file.writelines(file_content)
             print_tree(f"{file_path} created", "file")
 
     def create_folder(self, folder_name):
