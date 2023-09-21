@@ -28,22 +28,16 @@ def read_json(file_path):
 
 
 def create_config_file(output_dir="./"):
+    """ Create a basic config file template if it not exists"""
     data = {
         "header": {
             "line 1": "#!/usr/bin/env python",
             "line 2": "__author__ = 'Maximo Rodriguez Herrero'",
             "line 3": "__email__ = 'mxrdhr@gmail.com'"
             },
-        "gitignore": [".obsidian", ".venv", ".ipynb_checkpoints", "__pycache__"],
+        "gitignore": [".obsidian", ".venv", ".ipynb_checkpoints", ".idea", "__pycache__/"],
         "package_files": ["__init__.py", "constants.py", "utils.py", "README.md"]
     }
-    json_object = json.dumps(data)
-    with open("../config.json", "w") as file:
+    json_object = json.dumps(data, indent=4, sort_keys=True)
+    with open(os.path.join(output_dir, "config.json"), "w") as file:
         file.write(json_object)
-
-
-
-
-
-
-
