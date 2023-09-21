@@ -24,13 +24,13 @@ class StructureGen:
 
         self.create_folder("")    # Create workplace folder
 
-    def create_file(self, file_path, header=None):
+    @staticmethod
+    def create_file(file_path, header=None):
         """
         Creates an empty file unless otherwise specify
         :param file_path: Complete path to file including extension C//...//name.ext
         :param header: if True a header is added to the file, default False
         """
-        # complete_path = os.path.join(self.output_dir, file_name)
         if os.path.exists(file_path):
             print_tree(f"{file_path} already exists", "file")
         else:
