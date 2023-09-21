@@ -34,7 +34,7 @@ def create_config_file(output_dir="./"):
             "line 2": "__author__ = 'Maximo Rodriguez Herrero'",
             "line 3": "__email__ = 'mxrdhr@gmail.com'"
             },
-        "gitignore": [".obsidian", ".venv", ".ipynb_checkpoints", ""],
+        "gitignore": [".obsidian", ".venv", ".ipynb_checkpoints", "__pycache__"],
         "package_files": ["__init__.py", "constants.py", "utils.py", "README.md"]
     }
     json_object = json.dumps(data)
