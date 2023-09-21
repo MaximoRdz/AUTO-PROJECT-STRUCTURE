@@ -3,6 +3,7 @@
 Use this repository to initialize your workplaces for Developing or Data Science, 
 ```cmd
 git clone https://github.com/MaximoRdz/AUTO-PROJECT-STRUCTURE.git
+cd AUTO-PROJECT-STRUCTURE
 ```
 Run `main.py` on the terminal specifying your necessities, 
 ```cmd
