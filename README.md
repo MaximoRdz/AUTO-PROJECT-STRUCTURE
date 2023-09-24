@@ -1,4 +1,6 @@
 # Automatic Project Structure Generator
+## Project Overview
+Every coding project has unique goals, different requirements and specific features that are not shared across field-related projects. However, if I have learned anything about computer science is that organization and structure consistency is key to success, that is why this repo is focused on developing an automatic initial workplace so that the structure and initial steps of every project remain consistent. Due to my specialization, there are two main branches of projects that I work on in a day to day fashion: developing **APPs**, **API**, . . .; or, what I call, **DEV** projects and Data Science (**DS**) projects.
 ## Quick Start
 Use this repository to initialize your workplaces for Developing or Data Science, 
 ```cmd
@@ -12,8 +14,6 @@ python main.py --type DS --output_dir . --packages run_model train_model
 This example would produce the following structure
 ==add tree structure==
 For further customization check the documentation.
-## Project Overview
-Every coding project has unique goals, different requirements and specific features that are not shared across field-related projects. However, if I have learned anything about computer science is that organization and structure consistency is key to success, that is why this repo is focused on developing an automatic initial workplace so that the structure and initial steps of every project remain consistent. Due to my specialization, there are two main branches of projects that I work on in a day to day fashion: developing **APPs**, **API**, . . .; or, what I call, **DEV** projects and Data Science (**DS**) projects.
 ## Shared Items
 Despite the differences between projects there are always some commonalities.
 - `.gitignore`: Avoid git control over certain files like `.ipynb_checkpoints/`, `.obsidian`, etc.
