@@ -31,7 +31,7 @@ DEV projects consist on the `main.py` file located in the project folder and sur
 │   ├── images/
 │   ├── test/ 
 │   ├── PackageName/
-│   │   ├── __init.py__
+│   │   ├── __init__.py
 │   │   ├── constants.py
 │   │   ├── utils.py
 │   │   ├── package_name.py
@@ -52,11 +52,15 @@ Data Science projects generally consist of exploratory notebooks, reports, model
 │   ├── notebooks/ 
 │   ├── reports/ 
 │   ├── models/
-│   │   ├── __init.py__
+│   │   ├── __init__.py
 │   │   ├── constants.py
 │   │   ├── utils.py
 │   │   ├── train_model.py
 │   │   ├── run_model.py
+│   │   └── README.md
+│   ├── visualization/
+│   │   ├── __init__.py
+│   │   ├── visualization.py
 │   │   └── README.md
 │   ├── .gitignore
 │   ├── config.json
