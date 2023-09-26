@@ -1,5 +1,7 @@
 ## Program Design
-![Program Design](https://github.com/MaximoRdz/AUTO-PROJECT-STRUCTURE/blob/main/images/program_design.PNG)
+
+<img src="https://github.com/MaximoRdz/AUTO-PROJECT-STRUCTURE/blob/main/images/program_design.PNG" alt="Program Design" width="600"/>
+
 ## Config File
 Generate default config file with `create_config_file()` function [`utils.py`](https://github.com/MaximoRdz/AUTO-PROJECT-STRUCTURE/blob/main/structure_gen/utils.py) 
 ```json
