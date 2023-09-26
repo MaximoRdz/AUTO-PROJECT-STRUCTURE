@@ -44,6 +44,26 @@ DEV projects consist on the `main.py` file located in the project folder and sur
 ```
 
 ## DS Projects
+Data Science projects generally consist of exploratory notebooks, reports, models (including train and run)
+```bash
+├── DS Project  
+│   ├── images/
+│   ├── data/ 
+│   ├── notebooks/ 
+│   ├── reports/ 
+│   ├── models/
+│   │   ├── __init.py__
+│   │   ├── constants.py
+│   │   ├── utils.py
+│   │   ├── train_model.py
+│   │   ├── run_model.py
+│   │   └── README.md
+│   ├── .gitignore
+│   ├── config.json
+│   ├── main.py
+│   └── README.md
+└── 
+```
 TODO
 - [Home - Cookiecutter Data Science (drivendata.github.io)](http://drivendata.github.io/cookiecutter-data-science/)
 - [data science life cycle - Bing images](https://www.bing.com/images/search?q=data+science+life+cycle&form=HDRSC4&first=1)
@@ -51,5 +71,6 @@ TODO
 ## TODO
 Since the purpose of this project is to automate as much as possible there will always be extra steps that could be save, here I leave a few that would be useful for me:
 - [ ] Default `README.md` structure (title, overview, used tech, etc.)
-- [ ] Automatically create the projects **venv**.
+- [ ] Automatically create the projects **venv**
+- [ ] Config file manipulation (creation, load, . . .) should all be integrated on its own class to increase sustainability
 
