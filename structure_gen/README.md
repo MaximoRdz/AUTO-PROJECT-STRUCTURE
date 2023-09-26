@@ -4,7 +4,7 @@
 
 ## Config File
 Generate default config file with `create_config_file()` function [`utils.py`](https://github.com/MaximoRdz/AUTO-PROJECT-STRUCTURE/blob/main/structure_gen/utils.py) 
-```json
+```cmd
 {
     "gitignore": [
         ".obsidian",
