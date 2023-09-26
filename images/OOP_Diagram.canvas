@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"695f0a2d3ab3ab26","type":"text","text":"parent class","x":-520,"y":-460,"width":160,"height":60},
+		{"id":"bc18179a4d29be20","type":"text","text":"==StructureGen==\n\n- parsed arguments\n\t- project_type\n\t- outputdir\n\t- packages\n\t- folders\n- create_file()\n- create_folder()\n- create_package()\n","x":-522,"y":-370,"width":242,"height":295},
+		{"id":"ec435b80dc31fe63","type":"text","text":"==DevProject(StructureGen)==\n\nCreates dev structured project.\n","x":-140,"y":-200,"width":250,"height":125},
+		{"id":"146009e98540b761","type":"text","text":"Child class","x":-140,"y":-282,"width":140,"height":60},
+		{"id":"650c4c0154e76a5d","type":"text","text":"Child class","x":-620,"y":-10,"width":140,"height":60},
+		{"id":"3677526c91ac8b16","type":"text","text":"==DsProject(StructureGen)==\n\nCreates DS structured project","x":-620,"y":70,"width":260,"height":200}
+	],
+	"edges":[
+		{"id":"083ab8b99ce69388","fromNode":"ec435b80dc31fe63","fromSide":"left","toNode":"bc18179a4d29be20","toSide":"right"},
+		{"id":"0ddac4962031129b","fromNode":"3677526c91ac8b16","fromSide":"right","toNode":"bc18179a4d29be20","toSide":"bottom"}
+	]
+}
