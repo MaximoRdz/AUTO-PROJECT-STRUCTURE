@@ -1,4 +1,4 @@
-import os.path
+import os
 
 from structure_gen.structure_gen import StructureGen
 
@@ -15,7 +15,7 @@ class DevProject(StructureGen):
     def create_workplace(self):
         """
         The dev project structure consist of:
-        ├── AP Project
+        ├── DEV Project
         │   ├── images/
         │   ├── test/
         │   ├── Package Name
