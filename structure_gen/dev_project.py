@@ -19,12 +19,13 @@ class DevProject(StructureGen):
         │   ├── images/
         │   ├── test/
         │   ├── Package Name
-        │   │   ├── __init.py__
+        │   │   ├── __init__.py
         │   │   ├── constants.py
         │   │   ├── utils.py
         │   │   ├── package_name.py
         │   │   └── README.md
         │   ├── .gitignore
+        │   ├── config.json
         │   ├── main.py
         │   └── README.md
         └──
