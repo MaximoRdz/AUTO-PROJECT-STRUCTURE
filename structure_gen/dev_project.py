@@ -36,7 +36,11 @@ class DevProject(StructureGen):
         self.create_file(os.path.join(self.output_dir, ".gitignore"), self.gitignore)
 
         for package in self.packages:
+            if package is None:
+                continue
             self.create_package(package)
 
         for folder in self.folders:
+            if folder is None:
+                continue
             self.create_folder(folder)
