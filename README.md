@@ -55,8 +55,8 @@ Data Science projects generally consist of exploratory notebooks, models (includ
 │   │	│   ├── constants.py
 │   │	│   ├── utils.py
 │   │	│   ├── model.py
-│   │   ├── visualization.py
-│   │	│   └── README.md
+│   │   │   ├── visualization.py
+│   │	└── └── README.md
 │   ├── .gitignore
 │   ├── config.json
 │   ├── main.py
