@@ -9,7 +9,7 @@ cd AUTO-PROJECT-STRUCTURE
 ```
 Run `main.py` on the terminal specifying your necessities, 
 ```cmd
-python main.py --type DS --output_dir . --packages run_model train_model 
+python main.py --type DS --output_dir ./example --packages run_model train_model 
 ```
 This example would produce the following structure
 ==add tree structure==
@@ -44,29 +44,23 @@ DEV projects consist on the `main.py` file located in the project folder and sur
 ```
 
 ## DS Projects
-Data Science projects generally consist of exploratory notebooks, reports, models (including train and run)
+Data Science projects generally consist of exploratory notebooks, models (including train and run) and visualization tools
 ```bash
 ├── DS Project  
 │   ├── images/
 │   ├── data/ 
-│   ├── notebooks/ 
-│   ├── reports/ 
-│   ├── src/
-|   │   ├── __init__.py
-│	│   ├── models/
-│	│   │   ├── constants.py
-│	│   │   ├── utils.py
-│	│   │   ├── train_model.py
-│	│   │   ├── run_model.py
-│   │   │   └── README.md
-│   │   ├── visualization/
-│	│   │   ├── visualization.py
-│	│   └── └── README.md
+│   ├── notebooks/  
+│	├── models/
+│	│   ├── __init__.py
+│	│   ├── constants.py
+│	│   ├── utils.py
+│	│   ├── model.py
+│   │   ├── visualization.py
+│	│   └── README.md
 │   ├── .gitignore
 │   ├── config.json
 │   ├── main.py
-│   └── README.md
-└── 
+└── └── README.md
 ```
 TODO
 - [Home - Cookiecutter Data Science (drivendata.github.io)](http://drivendata.github.io/cookiecutter-data-science/)
