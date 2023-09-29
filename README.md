@@ -3,7 +3,7 @@
 Every coding project has unique goals, different requirements and specific features that are not shared across field-related projects. However, if I have learned anything about computer science is that organization and structure consistency is key to success, that is why this repo is focused on developing an automatic initial workplace so that the structure and initial steps of every project remain consistent. Due to my specialization, there are two main branches of projects that I work on in a day to day fashion: developing **APPs**, **API**, . . .; or, what I call, **DEV** projects and Data Science (**DS**) projects.
 ## Quick Start
 Use this repository to initialize your workplaces for Developing or Data Science, 
-```cmd
+```bash
 git clone https://github.com/MaximoRdz/AUTO-PROJECT-STRUCTURE.git
 cd AUTO-PROJECT-STRUCTURE
 ```
