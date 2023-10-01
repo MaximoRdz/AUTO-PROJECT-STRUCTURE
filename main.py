@@ -1,6 +1,7 @@
 import argparse
 
 import structure_gen.constants as ct
+
 from structure_gen.dev_project import DevProject
 from structure_gen.ds_project import DsProject
 from structure_gen.utils import create_config_file
