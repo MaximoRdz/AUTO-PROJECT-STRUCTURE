@@ -63,6 +63,7 @@ Data Science projects generally consist of exploratory notebooks, models (includ
 └── └── README.md
 ```
 TODO
+- Fix both readmes 
 - [Home - Cookiecutter Data Science (drivendata.github.io)](http://drivendata.github.io/cookiecutter-data-science/)
 - [data science life cycle - Bing images](https://www.bing.com/images/search?q=data+science+life+cycle&form=HDRSC4&first=1)
 - [(7) The Best Way to Organize Your Data Science Projects - YouTube](https://www.youtube.com/watch?v=MaIfDPuSlw8&t=443s)
