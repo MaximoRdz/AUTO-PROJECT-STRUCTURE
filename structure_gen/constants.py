@@ -7,11 +7,11 @@ GITIGNORE_LINE_SEP = "".join(["\n", "# ", 20*"-", "\n"])
 PROJECT_INFO = {
     "DEV": {
         "folders": ["images", "test"],
-        "packages": ["default"],
+        "packages": ["default"]
     },
     "DS": {
         "folders": ["images", "data", "notebooks"],
-        "packages": ["model"],
+        "packages": ["model"]
     }
 }
 

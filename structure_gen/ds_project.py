@@ -20,7 +20,7 @@ class DsProject(StructureGen):
         │   ├── data/
         │   ├── notebooks/
         │	├── model/
-        |	|   ├── __init__.py
+        │	│   ├── __init__.py
         │	│   ├── constants.py
         │	│   ├── utils.py
         │	│   ├── model.py
@@ -41,8 +41,8 @@ class DsProject(StructureGen):
                 continue
             self.create_package(package)
         
-        # ADD extra files in DS package /models/
-        self.create_file(os.path.join(self.output_dir, "models", "visualization.py"), self.header)
+        # ADD extra files in DS package /model/
+        self.create_file(os.path.join(self.output_dir, "model", "visualization.py"), self.header)
 
         for folder in self.folders:
             if folder is None:
