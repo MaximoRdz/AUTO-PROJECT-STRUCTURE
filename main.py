@@ -35,18 +35,20 @@ if __name__ == "__main__":
     if args.packages is None:
         packages = ct.PROJECT_INFO[project_type]["packages"]
     else:
-        packages = ct.PROJECT_INFO[project_type]["packages"].extend(args.packages)
+        packages = ct.PROJECT_INFO[project_type]["packages"]
+        packages.extend(args.packages)
 
     # Default project folders extended with user required folders (if any)
     if args.folders is None:
         folders = ct.PROJECT_INFO[project_type]["folders"]
     else:
-        folders = ct.PROJECT_INFO[project_type]["folders"].extend(args.folders)
-    print(packages)
-"""    if project_type == "DEV":
+        folders = ct.PROJECT_INFO[project_type]["folders"]
+        folders.extend(args.folders)
+
+    if project_type == "DEV":
         project_structure = DevProject(project_type, output_dir, packages, folders).create_workplace()
     else:
-        project_structure = DsProject(project_type, output_dir, packages, folders).create_workplace()"""
+        project_structure = DsProject(project_type, output_dir, packages, folders).create_workplace()
     
     
 
