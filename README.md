@@ -42,7 +42,9 @@ Despite the differences between projects there are always some commonalities.
 	- `package_files`: Desired structure of our customized python packages.
 ## Terminal Commands
 ```cmd
-python main.py --type <DS or DEV> --output_dir <path including workplace name> --packages <extra packages> --folders <extra folders> --config <True to create config file> 
+python main.py --type <DS or DEV> --output_dir <path including workplace name>
+               --packages <extra packages> --folders <extra folders>
+               --config <True to create config file> 	
 ```
 ## DEV Projects
 DEV projects consist on the `main.py` file located in the project folder and surrounded by packages that feed to `main.py` the necessary tools to work properly. Every package has associated both `constants.py` and `utils.py` files which I find necessary to provide support to `package.py`, and, of course a `README.md` that further explains the package functionality.
