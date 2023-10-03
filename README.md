@@ -9,11 +9,28 @@ cd AUTO-PROJECT-STRUCTURE
 ```
 Run `main.py` on the terminal specifying your necessities, 
 ```cmd
-python main.py --type DS --output_dir ./example --packages run_model train_model 
+python main.py --type DS --output_dir ./ds_example --folders reports 
 ```
-This example would produce the following structure
-==add tree structure==
-For further customization check the documentation.
+This example would result on the following structure
+```bash
+├── ds_example  
+│   ├── data/
+│   ├── images/
+│   ├── notebooks/
+│   ├── reports/ 
+│   ├── model/
+│   │   ├── __init__.py
+│   │   ├── constants.py
+│   │   ├── utils.py
+│   │   ├── model.py
+│   │   ├── visualization.py
+│   │   └── README.md
+│   ├── .gitignore
+│   ├── main.py
+│   └── README.md
+└── 
+```
+**For further customization check the documentation.**
 ## Shared Items
 Despite the differences between projects there are always some commonalities.
 - `.gitignore`: Avoid git control over certain files like `.ipynb_checkpoints/`, `.obsidian`, etc.
@@ -23,6 +40,10 @@ Despite the differences between projects there are always some commonalities.
 	- `header`: Lines to write at the beginning of `.py` files.
 	- `gitignore:` File extensions or folders to be ignore on git.
 	- `package_files`: Desired structure of our customized python packages.
+## Terminal Commands
+```cmd
+python main.py --type <DS or DEV> --output_dir <path including workplace name> --packages <extra packages> --folders <extra folders> --config <True to create config file> 
+```
 ## DEV Projects
 DEV projects consist on the `main.py` file located in the project folder and surrounded by packages that feed to `main.py` the necessary tools to work properly. Every package has associated both `constants.py` and `utils.py` files which I find necessary to provide support to `package.py`, and, of course a `README.md` that further explains the package functionality.
 ### DEV Example Structure
@@ -62,11 +83,8 @@ Data Science projects generally consist of exploratory notebooks, models (includ
 │   ├── main.py
 └── └── README.md
 ```
-TODO
-- Fix both readmes 
+### References
 - [Home - Cookiecutter Data Science (drivendata.github.io)](http://drivendata.github.io/cookiecutter-data-science/)
-- [data science life cycle - Bing images](https://www.bing.com/images/search?q=data+science+life+cycle&form=HDRSC4&first=1)
-- [(7) The Best Way to Organize Your Data Science Projects - YouTube](https://www.youtube.com/watch?v=MaIfDPuSlw8&t=443s)
 ## TODO
 Since the purpose of this project is to automate as much as possible there will always be extra steps that could be save, here I leave a few that would be useful for me:
 - [ ] Default `README.md` structure (title, overview, used tech, etc.)
