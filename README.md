@@ -30,7 +30,8 @@ This example would result on the following structure
 │   └── README.md
 └── 
 ```
-**For further customization check the documentation.**
+> [!NOTE]
+> **For further customization check the documentation.**
 ## Shared Items
 Despite the differences between projects there are always some commonalities.
 - `.gitignore`: Avoid git control over certain files like `.ipynb_checkpoints/`, `.obsidian`, etc.
